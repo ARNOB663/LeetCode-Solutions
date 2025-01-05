@@ -7,12 +7,10 @@ class Solution {
         return Math.floor(logBase4) === logBase4;  // If the floor of the result is equal to the result, then it is an integer
     }
 }
-
 const solution = new Solution();
 const test1 = 16; // Expected output: true
 const test2 = 5;  // Expected output: false
 const test3 = 1;  // Expected output: true
-
 // Function call
 console.log(solution.isPowerOfFour(test1));
 console.log(solution.isPowerOfFour(test2));
