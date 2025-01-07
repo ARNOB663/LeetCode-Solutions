@@ -10,6 +10,7 @@ class Solution {
             console.log("Using Mathematical Formula Approach:");
             return total - sum;
         }
+        
         //Hashing Approach (Fallback)
         console.log("Using Hashing Approach:");
         const hash = new Array(n + 1).fill(0); // Create a hash array initialized with 0
