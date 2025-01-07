@@ -21,6 +21,7 @@ class Solution {
         for (let i = 0; i <= n; i++) {
             if (hash[i] === 0) {
                 return i;
+            
             }
         }
         return -1; // Default case (should not occur with valid input)
