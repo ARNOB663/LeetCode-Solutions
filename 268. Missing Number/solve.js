@@ -2,18 +2,18 @@ class Solution {
     // Method to find the missing number
     missingNumber(nums) {
         const n = nums.length;
-        // Mathematical Formula Approach
+        //Mathematical Formula Approach
         const total = (n * (n + 1)) / 2; // Sum of first n natural numbers
         const sum = nums.reduce((acc, num) => acc + num, 0);
-        // If the difference yields a valid result, return it
+        //If the difference yields a valid result, return it
         if (total - sum >= 0) {
             console.log("Using Mathematical Formula Approach:");
             return total - sum;
         }
-        // Hashing Approach (Fallback)
+        //Hashing Approach (Fallback)
         console.log("Using Hashing Approach:");
         const hash = new Array(n + 1).fill(0); // Create a hash array initialized with 0
-        // Mark the presence of numbers
+        //Mark the presence of numbers
         for (let i = 0; i < nums.length; i++) {
             hash[nums[i]] = 1;
         }
@@ -26,7 +26,6 @@ class Solution {
         return -1; // Default case (should not occur with valid input)
     }
 }
-
 // Test cases
 const solution = new Solution();
 const nums1 = [3, 0, 1];
