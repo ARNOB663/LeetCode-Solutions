@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<map>
 using namespace std;
 int  main()
 { //number hashing in map 
@@ -15,15 +16,19 @@ int  main()
   {
      mp[arr[i]]++;
   }
+  //print the frequency of each number
+  for(auto it:mp)
+  {
+    cout<<it.first<<endl;
+  }
+
   int q;
   cin>>q;
   //query
   while(q--)
   {
    int number;
-
     cin>>number;
-
     cout<<mp[number]<<endl;
    //fetch
   }
