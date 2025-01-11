@@ -17,10 +17,10 @@ int  main()
      mp[arr[i]]++;
   }
   //print the frequency of each number
-  for(auto it:mp)
-  {
-    cout<<it.first<<endl;
-  }
+//   for(auto it:mp)
+//   {
+//     cout<<it.first<<endl;
+//   }
 
   int q;
   cin>>q;
