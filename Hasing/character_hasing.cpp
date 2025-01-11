@@ -8,7 +8,7 @@ int main()
     string s;
     cin>>s;
     //pre calculation
-
+ //only for small letters
      int hash[26] = {0};
       for(int i=0;i<s.size();i++)
       {
@@ -16,7 +16,7 @@ int main()
       }
     int q;
     cin>> q;
-
+ //query 
     while(q--)
     {
         char c;
