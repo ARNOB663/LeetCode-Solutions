@@ -1,4 +1,9 @@
 #include<iostream>
+<<<<<<< HEAD
+using  namespace std;
+int main(){
+    cout<<"hello"<<endl;
+=======
 #include<vector>
 #include<algorithm>
 #include<numeric>
@@ -66,4 +71,5 @@ int main() {
     cout << "Missing number: " << sol.missingNumber(nums5) << endl; // Output: 1
 
     return 0;
+>>>>>>> 5fb499a15eb25a99310ba99a26b37bab88f8630b
 }
