@@ -17,9 +17,9 @@ int main()
     while(q--)
     {
 
-  char c;
-  cin>>c;
-  cout<<hash[c]<<endl;
+      char c;
+      cin>>c;
+      cout<<hash[c]<<endl;
 
     }
  
