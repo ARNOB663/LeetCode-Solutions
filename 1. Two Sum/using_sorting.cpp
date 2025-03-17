@@ -26,7 +26,6 @@ class Solution {
             return {}; // Return an empty vector if no solution is found
         }
 };
-
 int main() {
     Solution sol;
     vector<int> nums = {2, 7, 11, 15};
