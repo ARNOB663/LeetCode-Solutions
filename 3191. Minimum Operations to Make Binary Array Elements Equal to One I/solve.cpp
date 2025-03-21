@@ -14,4 +14,4 @@ class Solution {
                 return flipCount;
             return -1;
         }
-    };2
+    };
