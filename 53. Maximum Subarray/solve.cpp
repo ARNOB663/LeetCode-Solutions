@@ -1,22 +1,30 @@
 class Solution {
-    public:
-        int maxSubArray(vector<int>& nums) {
-    
-           //using Kadane’s Algorithm
-          int  max_sum = INT_MIN,sum=0,n=nums.size();
-    
-           for(int i=0;i<n;i++)
-           { 
-              if(sum+ nums[i] > nums[i])
-                 sum+=nums[i];
-                 else
-                 sum=nums[i];
-              if(sum>=max_sum)
-              {
-                max_sum=sum;
-              }
+   public:
+       int maxSubArray(vector<int>& nums) {
+           int max_sum = nums[0];
+           int sum = nums[0];
+           int start_index = 0, end_index = 0, temp_start = 0;
+   
+           for (int i = 1; i < nums.size(); i++) {
+               if (sum + nums[i] > nums[i]) {
+                   sum += nums[i];
+               } else {
+                   sum = nums[i];
+                   temp_start = i; // possible new start
+               }
+   
+               if (sum > max_sum) {
+                   max_sum = sum;
+                   start_index = temp_start;
+                   end_index = i;
+               }
            }
-
-            return max_sum;
-        }
-    };
+           // Optional: Print subarray for debugging
+           // for (int i = start_index; i <= end_index; i++) {
+           //     cout << nums[i] << " ";
+           // }
+   
+           return max_sum;
+       }
+   };
+   
